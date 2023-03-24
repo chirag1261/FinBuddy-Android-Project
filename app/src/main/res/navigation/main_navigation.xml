@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeScreen2">
+    <fragment
+        android:id="@+id/homeScreen2"
+        android:name="com.example.finbuddy.Fragments.HomeScreen"
+        android:label="HomeScreen">
+        <action
+            android:id="@+id/action_homeScreen2_to_taxFragment2"
+            app:destination="@id/taxFragment2" />
+        <action
+            android:id="@+id/action_homeScreen2_to_investmentFragment2"
+            app:destination="@id/investmentFragment2" />
+        <action
+            android:id="@+id/action_homeScreen2_to_educationLoanFragment2"
+            app:destination="@id/educationLoanFragment2" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/taxFragment2"
+        android:name="com.example.finbuddy.Fragments.TaxFragment"
+        android:label="TaxFragment">
+
+        <action
+            android:id="@+id/action_taxFragment2_to_taxCalculatorFragment2"
+            app:destination="@id/taxCalculatorFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/investmentFragment2"
+        android:name="com.example.finbuddy.Fragments.InvestmentFragment"
+        android:label="InvestmentFragment">
+        <action
+            android:id="@+id/action_investmentFragment2_to_SIPCalculatorFragment2"
+            app:destination="@id/SIPCalculatorFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SIPCalculatorFragment2"
+        android:name="com.example.finbuddy.Fragments.SIPCalculatorFragment"
+        android:label="SIPCalculatorFragment" />
+
+    <fragment
+        android:id="@+id/educationLoanFragment2"
+        android:name="com.example.finbuddy.Fragments.EducationLoanFragment"
+        android:label="EducationLoanFragment" />
+
+    <fragment
+        android:id="@+id/taxCalculatorFragment2"
+        android:name="com.example.finbuddy.Fragments.TaxCalculatorFragment"
+        android:label="TaxCalculatorFragment" />
+</navigation>

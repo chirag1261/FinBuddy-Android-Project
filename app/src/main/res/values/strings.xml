@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FinBuddy</string>
+
+    <string name="investment_intro">While accumulating money is crucial for a financially secure future, it does not make sense to rely on savings alone. Investment is the smart solution to this.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

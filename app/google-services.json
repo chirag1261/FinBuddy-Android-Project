@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "412001880497",
+    "project_id": "finbuddy-f079e",
+    "storage_bucket": "finbuddy-f079e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412001880497:android:827eb633afc988b4ea1590",
+        "android_client_info": {
+          "package_name": "com.example.finbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412001880497-tk9b62scmaes1rhkpoc2jfdisa5fhb7r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finbuddy",
+            "certificate_hash": "7c18673f129ed96136d724764d8bf3f33a722dd3"
+          }
+        },
+        {
+          "client_id": "412001880497-rfahanoomhqo0snc47djrjetr1aeb40o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjAnJiIgl6K-Hps-tvZuDf_CWJyEvp-Vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412001880497-rfahanoomhqo0snc47djrjetr1aeb40o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

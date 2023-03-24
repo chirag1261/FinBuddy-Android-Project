@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2ABED"
+    tools:context=".Fragments.TaxCalculatorFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/sip_animation"
+        app:lottie_speed="1.5" />
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/MyCardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_calculator">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="SIP is an investment plan allowing people to invest in Mutual Funds in small amounts"
+                android:textColor="#8C9091"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/basic_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Amount invested"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Duration in months"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/interest_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Expected Rate of Returns"
+                android:inputType="numberDecimal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/calculate_sip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#73CC8C"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="12dp"
+                android:text="Calculate"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                app:cornerRadius="18dp" />
+
+            <TextView
+                android:id="@+id/sip_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="SIP = ₹25000" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
